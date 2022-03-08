@@ -1,0 +1,37 @@
+{
+  "name": "problem5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "coverage": "npx hardhat coverage",
+    "lint": "npm run prettier-check && npm run solhint",
+    "migrate-bsc-testnet-tokenbalances": "npx hardhat run --network bsc-testnet scripts/migrate-tokenbalances.js",
+    "node": "npx hardhat node",
+    "precompile": "npm run lint",
+    "precoverage": "npm run compile",
+    "pretest": "npm run compile",
+    "prettier-check": "npx prettier -c .",
+    "solhint": "npx solhint 'contracts/**/*.sol'",
+    "test": "npx hardhat test"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-truffle5": "^2.0.5",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "hardhat": "^2.9.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.7.20"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  }
+}

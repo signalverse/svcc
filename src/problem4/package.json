@@ -1,0 +1,21 @@
+{
+  "name": "problem4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "npx typechain --target ethers-v5 --out-dir contracts 'abi/*.json'",
+    "test": "npx ts-node ./retrieve-holders.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@typechain/ethers-v5": "^9.0.0",
+    "ts-node": "^10.6.0",
+    "typechain": "^7.0.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "ethers": "^5.5.4"
+  }
+}
